@@ -1,0 +1,2 @@
+ALL_PACKAGES += Calibration/HcalCalibAlgos
+subdirs_src_Calibration_HcalCalibAlgos := src_Calibration_HcalCalibAlgos_python src_Calibration_HcalCalibAlgos_plugins src_Calibration_HcalCalibAlgos_test src_Calibration_HcalCalibAlgos_src

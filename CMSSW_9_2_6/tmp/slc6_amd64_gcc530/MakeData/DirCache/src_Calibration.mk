@@ -1,0 +1,2 @@
+ALL_SUBSYSTEMS+=Calibration
+subdirs_src_Calibration = src_Calibration_HcalCalibAlgos

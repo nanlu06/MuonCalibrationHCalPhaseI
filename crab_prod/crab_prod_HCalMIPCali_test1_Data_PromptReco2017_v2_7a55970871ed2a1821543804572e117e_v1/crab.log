@@ -1,0 +1,135 @@
+DEBUG 2017-08-13 23:09:13,674: 	 Executing command: 'submit'
+DEBUG 2017-08-13 23:09:13,674: 	 Found CRAB cache file /afs/cern.ch/user/n/nlu/.crab3
+DEBUG 2017-08-13 23:09:13,681: 	 Checking credentials
+DEBUG 2017-08-13 23:09:13,682: 	 Found proxy file /afs/cern.ch/user/n/nlu/cert/voms_proxy.cert
+DEBUG 2017-08-13 23:09:13,682: 	 Getting proxy life time left
+DEBUG 2017-08-13 23:09:14,586: 	 Executing : 
+ command : voms-proxy-info -file /afs/cern.ch/user/n/nlu/cert/voms_proxy.cert -timeleft
+ output : 171667
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-13 23:09:15,092: 	 Executing : 
+ command : voms-proxy-info -file /afs/cern.ch/user/n/nlu/cert/voms_proxy.cert -actimeleft
+ output : 171666
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-13 23:09:15,092: 	 Proxy valid for 47:41:07 hours
+INFO 2017-08-13 23:09:15,092: 	 Will use CRAB configuration file prod_HCalMIPCali_test1_Data_PromptReco2017_v2_DoubleMuon_Run2017C-PromptReco-v1_v1.py
+DEBUG 2017-08-13 23:09:15,092: 	 Loading CRAB configuration file.
+DEBUG 2017-08-13 23:09:15,096: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2017-08-13 23:09:15,397: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=nlu/CN=738118/CN=Nan Lu
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-13 23:09:15,397: 	 Checking credentials
+DEBUG 2017-08-13 23:09:15,397: 	 Found proxy file /afs/cern.ch/user/n/nlu/cert/voms_proxy.cert
+DEBUG 2017-08-13 23:09:15,397: 	 Getting proxy life time left
+DEBUG 2017-08-13 23:09:16,006: 	 Executing : 
+ command : voms-proxy-info -file /afs/cern.ch/user/n/nlu/cert/voms_proxy.cert -timeleft
+ output : 171666
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-13 23:09:16,510: 	 Executing : 
+ command : voms-proxy-info -file /afs/cern.ch/user/n/nlu/cert/voms_proxy.cert -actimeleft
+ output : 171665
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-13 23:09:16,511: 	 Proxy valid for 47:41:06 hours
+DEBUG 2017-08-13 23:09:17,014: 	 Executing : 
+ command : env X509_USER_PROXY=/afs/cern.ch/user/n/nlu/cert/voms_proxy.cert voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+/cms/uscms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-13 23:09:17,421: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-08-13 23:09:17,529: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=nlu/CN=738118/CN=Nan Lu
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-13 23:09:17,530: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-08-13 23:09:17,530: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=nlu/CN=738118/CN=Nan Lu_cmsweb.cern.ch for credential name
+DEBUG 2017-08-13 23:09:17,733: 	 Executing : 
+ command : myproxy-info -l f5bc79b827bff85fd8afd77a30aa6e74e2c461e8 -s myproxy.cern.ch
+ output : username: f5bc79b827bff85fd8afd77a30aa6e74e2c461e8
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=nlu/CN=738118/CN=Nan Lu
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 623:20:01  (26.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-13 23:09:17,735: 	 Myproxy is valid: 2244001
+DEBUG 2017-08-13 23:09:17,735: 	 Command use: submit
+DEBUG 2017-08-13 23:09:17,735: 	 Options use: ['-c', 'prod_HCalMIPCali_test1_Data_PromptReco2017_v2_DoubleMuon_Run2017C-PromptReco-v1_v1.py']
+DEBUG 2017-08-13 23:09:18,081: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-08-13 23:09:18,081: 	 Instance is prod
+DEBUG 2017-08-13 23:09:18,081: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-08-13 23:09:18,081: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-08-13 23:09:18,081: 	 Started submission
+DEBUG 2017-08-13 23:09:18,081: 	 Working on /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/crab_prod/crab_prod_HCalMIPCali_test1_Data_PromptReco2017_v2_7a55970871ed2a1821543804572e117e_v1
+DEBUG 2017-08-13 23:09:18,503: 	 Loading required information from the environment
+DEBUG 2017-08-13 23:09:18,503: 	 Found CMSSW_9_2_6 for slc6_amd64_gcc530 with base /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/CMSSW_9_2_6
+DEBUG 2017-08-13 23:09:18,503: 	 Loading required information from the environment
+DEBUG 2017-08-13 23:09:18,503: 	 Found CMSSW_9_2_6 for slc6_amd64_gcc530 with base /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/CMSSW_9_2_6
+DEBUG 2017-08-13 23:09:18,515: 	 UNIQUE NAME: tarUUID 9af7d93d-01b6-4a9a-87c7-e17c3eaf510a 
+DEBUG 2017-08-13 23:09:18,516: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.workArea = 'crab_prod'
+config.General.requestName = 'prod_HCalMIPCali_test1_Data_PromptReco2017_v2_7a55970871ed2a1821543804572e117e_v1'
+config.section_('JobType')
+config.JobType.psetName = 'prod.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.allowUndistributedCMSSW = True
+config.section_('Data')
+config.Data.inputDataset = '/DoubleMuon/Run2017C-PromptReco-v1/RECO'
+config.Data.outputDatasetTag = 'HCalMIPCali_test1_Data_PromptReco2017_Run2017C-PromptReco-v1_v2_v1'
+config.Data.unitsPerJob = 100
+config.Data.ignoreLocality = True
+config.Data.splitting = 'LumiBased'
+config.Data.outLFNDirBase = '/store/user/nlu/'
+config.section_('Site')
+config.Site.storageSite = 'T2_CH_CERN'
+
+DEBUG 2017-08-13 23:09:18,517: 	 self.config.JobType.psetName: prod.py
+INFO 2017-08-13 23:09:18,518: 	 Importing CMSSW configuration prod.py
+INFO 2017-08-13 23:09:18,739: 	 Finished importing CMSSW configuration prod.py
+DEBUG 2017-08-13 23:09:18,739: 	 Writing CMSSW configuration to /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/crab_prod/crab_prod_HCalMIPCali_test1_Data_PromptReco2017_v2_7a55970871ed2a1821543804572e117e_v1/inputs/PSet.py
+DEBUG 2017-08-13 23:09:18,777: 	 The following EDM output files will be collected: []
+DEBUG 2017-08-13 23:09:18,777: 	 The following TFile output files will be collected: ['Validation_test.root']
+DEBUG 2017-08-13 23:09:18,777: 	 The following user output files will be collected: []
+DEBUG 2017-08-13 23:09:18,777: 	 Loading required information from the environment
+DEBUG 2017-08-13 23:09:18,777: 	 Found CMSSW_9_2_6 for slc6_amd64_gcc530 with base /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/CMSSW_9_2_6
+DEBUG 2017-08-13 23:09:18,777: 	 Making tarball in /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/crab_prod/crab_prod_HCalMIPCali_test1_Data_PromptReco2017_v2_7a55970871ed2a1821543804572e117e_v1/inputs/9af7d93d-01b6-4a9a-87c7-e17c3eaf510adefault.tgz
+DEBUG 2017-08-13 23:09:18,782: 	 Checking directory /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/CMSSW_9_2_6/lib
+DEBUG 2017-08-13 23:09:18,782: 	 Adding directory /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/CMSSW_9_2_6/lib to tarball
+DEBUG 2017-08-13 23:09:19,006: 	 Checking directory /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/CMSSW_9_2_6/biglib
+DEBUG 2017-08-13 23:09:19,006: 	 Adding directory /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/CMSSW_9_2_6/biglib to tarball
+DEBUG 2017-08-13 23:09:19,006: 	 Checking directory /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/CMSSW_9_2_6/module
+DEBUG 2017-08-13 23:09:19,007: 	 Adding data directory /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/CMSSW_9_2_6/src/Calibration/HcalCalibAlgos/data to tarball
+DEBUG 2017-08-13 23:09:20,332: 	 Adding data directory /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/CMSSW_9_2_6/src/Calibration/HcalCalibAlgos/interface to tarball
+DEBUG 2017-08-13 23:09:20,358: 	 Uploading archive /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/crab_prod/crab_prod_HCalMIPCali_test1_Data_PromptReco2017_v2_7a55970871ed2a1821543804572e117e_v1/inputs/9af7d93d-01b6-4a9a-87c7-e17c3eaf510adefault.tgz (1.243164.1 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-08-13 23:09:21,112: 	 Loading required information from the environment
+DEBUG 2017-08-13 23:09:21,112: 	 Found CMSSW_9_2_6 for slc6_amd64_gcc530 with base /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/CMSSW_9_2_6
+DEBUG 2017-08-13 23:09:21,112: 	 Making tarball in /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/crab_prod/crab_prod_HCalMIPCali_test1_Data_PromptReco2017_v2_7a55970871ed2a1821543804572e117e_v1/inputs/debugFiles.tgz
+DEBUG 2017-08-13 23:09:21,115: 	 Uploading archive /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/crab_prod/crab_prod_HCalMIPCali_test1_Data_PromptReco2017_v2_7a55970871ed2a1821543804572e117e_v1/inputs/debugFiles.tgz (1 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-08-13 23:09:21,431: 	 Result uploading input files: 9de074c906cf7ff90f12741c84184bcb572bff08da6f1f1ec1c9952b664a36f6.tar.gz 
+WARNING 2017-08-13 23:09:21,432: 	 Warning: The following output files will not be published, as they are not EDM files: ['Validation_test.root']
+INFO 2017-08-13 23:09:21,432: 	 Sending the request to the server
+DEBUG 2017-08-13 23:09:21,432: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 1, 'savelogsflag': 0, 'useparent': 0, 'asyncdest': 'T2_CH_CERN', 'algoargs': 100, 'cachefilename': '9de074c906cf7ff90f12741c84184bcb572bff08da6f1f1ec1c9952b664a36f6.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_9_2_6', 'edmoutfiles': [], 'userfiles': [], 'primarydataset': '', 'inputdata': '/DoubleMuon/Run2017C-PromptReco-v1/RECO', 'lfn': '/store/user/nlu/', 'dryrun': 0, 'workflow': 'crab_prod_HCalMIPCali_test1_Data_PromptReco2017_v2_7a55970871ed2a1821543804572e117e_v1', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'nonprodsw': 1, 'tfileoutfiles': ['Validation_test.root'], 'oneEventMode': 0, 'debugfilename': 'ffb67ac2eb548f009402ebd47bf68029df2755c5aa64aa47ed970f6ad7d5c601.tar.gz', 'saveoutput': 1, 'publication': 1, 'jobarch': 'slc6_amd64_gcc530', 'totalunits': 0, 'splitalgo': 'LumiBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': 'HCalMIPCali_test1_Data_PromptReco2017_Run2017C-PromptReco-v1_v2_v1'} 
+DEBUG 2017-08-13 23:09:21,432: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=1&savelogsflag=0&useparent=0&asyncdest=T2_CH_CERN&algoargs=100&cachefilename=9de074c906cf7ff90f12741c84184bcb572bff08da6f1f1ec1c9952b664a36f6.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_9_2_6&primarydataset=&inputdata=%2FDoubleMuon%2FRun2017C-PromptReco-v1%2FRECO&lfn=%2Fstore%2Fuser%2Fnlu%2F&dryrun=0&workflow=crab_prod_HCalMIPCali_test1_Data_PromptReco2017_v2_7a55970871ed2a1821543804572e117e_v1&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&nonprodsw=1&oneEventMode=0&debugfilename=ffb67ac2eb548f009402ebd47bf68029df2755c5aa64aa47ed970f6ad7d5c601.tar.gz&saveoutput=1&publication=1&jobarch=slc6_amd64_gcc530&totalunits=0&splitalgo=LumiBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=HCalMIPCali_test1_Data_PromptReco2017_Run2017C-PromptReco-v1_v2_v1&tfileoutfiles=Validation_test.root
+DEBUG 2017-08-13 23:09:22,331: 	 Result: {u'result': [{u'RequestName': u'170813_210921:nlu_crab_prod_HCalMIPCali_test1_Data_PromptReco2017_v2_7a55970871ed2a1821543804572e117e_v1'}]}
+INFO 2017-08-13 23:09:22,333: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2017-08-13 23:09:22,333: 	 Task name: 170813_210921:nlu_crab_prod_HCalMIPCali_test1_Data_PromptReco2017_v2_7a55970871ed2a1821543804572e117e_v1
+INFO 2017-08-13 23:09:22,334: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2017-08-13 23:09:22,334: 	 About to return
+INFO 2017-08-13 23:09:22,336: 	 Log file is /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/crab_prod/crab_prod_HCalMIPCali_test1_Data_PromptReco2017_v2_7a55970871ed2a1821543804572e117e_v1/crab.log

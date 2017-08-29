@@ -1,0 +1,4 @@
+[ libCalibrationHcalCalibAlgos.so ]
+# List of selected classes
+class TCell
+header Calibration/HcalCalibAlgos/src/TCell.h

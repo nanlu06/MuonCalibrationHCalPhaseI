@@ -1,0 +1,135 @@
+DEBUG 2017-08-17 11:07:58,949: 	 Executing command: 'submit'
+DEBUG 2017-08-17 11:07:58,949: 	 Found CRAB cache file /afs/cern.ch/user/n/nlu/.crab3
+DEBUG 2017-08-17 11:07:58,955: 	 Checking credentials
+DEBUG 2017-08-17 11:07:58,955: 	 Found proxy file /afs/cern.ch/user/n/nlu/cert/voms_proxy.cert
+DEBUG 2017-08-17 11:07:58,955: 	 Getting proxy life time left
+DEBUG 2017-08-17 11:07:59,559: 	 Executing : 
+ command : voms-proxy-info -file /afs/cern.ch/user/n/nlu/cert/voms_proxy.cert -timeleft
+ output : 172773
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-17 11:08:00,165: 	 Executing : 
+ command : voms-proxy-info -file /afs/cern.ch/user/n/nlu/cert/voms_proxy.cert -actimeleft
+ output : 172771
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-17 11:08:00,166: 	 Proxy valid for 47:59:33 hours
+INFO 2017-08-17 11:08:00,166: 	 Will use CRAB configuration file prod_HCalMIPCali_test1_17DR_DYToMuMu_M-20_13TeV_v2_DYToMuMu_M-20_13TeV_pythia8_PhaseISpring17DR-NoPU_90X_upgrade2017_realistic_v20-v1_v1.py
+DEBUG 2017-08-17 11:08:00,166: 	 Loading CRAB configuration file.
+DEBUG 2017-08-17 11:08:00,169: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2017-08-17 11:08:00,354: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=nlu/CN=738118/CN=Nan Lu
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-17 11:08:00,354: 	 Checking credentials
+DEBUG 2017-08-17 11:08:00,354: 	 Found proxy file /afs/cern.ch/user/n/nlu/cert/voms_proxy.cert
+DEBUG 2017-08-17 11:08:00,354: 	 Getting proxy life time left
+DEBUG 2017-08-17 11:08:00,965: 	 Executing : 
+ command : voms-proxy-info -file /afs/cern.ch/user/n/nlu/cert/voms_proxy.cert -timeleft
+ output : 172772
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-17 11:08:01,776: 	 Executing : 
+ command : voms-proxy-info -file /afs/cern.ch/user/n/nlu/cert/voms_proxy.cert -actimeleft
+ output : 172770
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-17 11:08:01,776: 	 Proxy valid for 47:59:32 hours
+DEBUG 2017-08-17 11:08:02,487: 	 Executing : 
+ command : env X509_USER_PROXY=/afs/cern.ch/user/n/nlu/cert/voms_proxy.cert voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+/cms/uscms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-17 11:08:02,927: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+DEBUG 2017-08-17 11:08:03,036: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=nlu/CN=738118/CN=Nan Lu
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-17 11:08:03,036: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2017-08-17 11:08:03,036: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=nlu/CN=738118/CN=Nan Lu_cmsweb.cern.ch for credential name
+DEBUG 2017-08-17 11:08:03,141: 	 Executing : 
+ command : myproxy-info -l f5bc79b827bff85fd8afd77a30aa6e74e2c461e8 -s myproxy.cern.ch
+ output : username: f5bc79b827bff85fd8afd77a30aa6e74e2c461e8
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=nlu/CN=738118/CN=Nan Lu
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108|0105|0109).cern.ch
+  timeleft: 539:21:15  (22.5 days)
+
+ error: 
+ retcode : 0
+DEBUG 2017-08-17 11:08:03,142: 	 Myproxy is valid: 1941675
+DEBUG 2017-08-17 11:08:03,143: 	 Command use: submit
+DEBUG 2017-08-17 11:08:03,143: 	 Options use: ['-c', 'prod_HCalMIPCali_test1_17DR_DYToMuMu_M-20_13TeV_v2_DYToMuMu_M-20_13TeV_pythia8_PhaseISpring17DR-NoPU_90X_upgrade2017_realistic_v20-v1_v1.py']
+DEBUG 2017-08-17 11:08:03,495: 	 CRABClient version: 3.3.1707.patch1
+DEBUG 2017-08-17 11:08:03,495: 	 Instance is prod
+DEBUG 2017-08-17 11:08:03,496: 	 Server base url is cmsweb.cern.ch
+DEBUG 2017-08-17 11:08:03,496: 	 Command url /crabserver/prod/workflow
+DEBUG 2017-08-17 11:08:03,496: 	 Started submission
+DEBUG 2017-08-17 11:08:03,496: 	 Working on /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/crab_prod/crab_prod_HCalMIPCali_test1_17DR_DYToMuMu_M-20_13TeV_v2_17234059ddf016650b1f2d0066d4baab_v1
+DEBUG 2017-08-17 11:08:03,890: 	 Loading required information from the environment
+DEBUG 2017-08-17 11:08:03,890: 	 Found CMSSW_9_2_6 for slc6_amd64_gcc530 with base /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/CMSSW_9_2_6
+DEBUG 2017-08-17 11:08:03,890: 	 Loading required information from the environment
+DEBUG 2017-08-17 11:08:03,890: 	 Found CMSSW_9_2_6 for slc6_amd64_gcc530 with base /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/CMSSW_9_2_6
+DEBUG 2017-08-17 11:08:03,902: 	 UNIQUE NAME: tarUUID 5b2974ce-7922-4f3b-b4b6-245865e4fae8 
+DEBUG 2017-08-17 11:08:03,902: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.workArea = 'crab_prod'
+config.General.requestName = 'prod_HCalMIPCali_test1_17DR_DYToMuMu_M-20_13TeV_v2_17234059ddf016650b1f2d0066d4baab_v1'
+config.section_('JobType')
+config.JobType.psetName = 'prod.py'
+config.JobType.pluginName = 'Analysis'
+config.JobType.allowUndistributedCMSSW = True
+config.section_('Data')
+config.Data.inputDataset = '/DYToMuMu_M-20_13TeV_pythia8/PhaseISpring17DR-NoPU_90X_upgrade2017_realistic_v20-v1/GEN-SIM-RECO'
+config.Data.outputDatasetTag = 'HCalMIPCali_test1_17DR_DYToMuMu_M-20_13TeV_PhaseISpring17DR-NoPU_90X_upgrade2017_realistic_v20-v1_v2_v1'
+config.Data.unitsPerJob = 100
+config.Data.ignoreLocality = True
+config.Data.splitting = 'LumiBased'
+config.Data.outLFNDirBase = '/store/user/nlu/'
+config.section_('Site')
+config.Site.storageSite = 'T2_CH_CERN'
+
+DEBUG 2017-08-17 11:08:03,904: 	 self.config.JobType.psetName: prod.py
+INFO 2017-08-17 11:08:03,905: 	 Importing CMSSW configuration prod.py
+INFO 2017-08-17 11:08:04,072: 	 Finished importing CMSSW configuration prod.py
+DEBUG 2017-08-17 11:08:04,072: 	 Writing CMSSW configuration to /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/crab_prod/crab_prod_HCalMIPCali_test1_17DR_DYToMuMu_M-20_13TeV_v2_17234059ddf016650b1f2d0066d4baab_v1/inputs/PSet.py
+DEBUG 2017-08-17 11:08:04,116: 	 The following EDM output files will be collected: []
+DEBUG 2017-08-17 11:08:04,116: 	 The following TFile output files will be collected: ['Validation_test.root']
+DEBUG 2017-08-17 11:08:04,116: 	 The following user output files will be collected: []
+DEBUG 2017-08-17 11:08:04,116: 	 Loading required information from the environment
+DEBUG 2017-08-17 11:08:04,116: 	 Found CMSSW_9_2_6 for slc6_amd64_gcc530 with base /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/CMSSW_9_2_6
+DEBUG 2017-08-17 11:08:04,116: 	 Making tarball in /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/crab_prod/crab_prod_HCalMIPCali_test1_17DR_DYToMuMu_M-20_13TeV_v2_17234059ddf016650b1f2d0066d4baab_v1/inputs/5b2974ce-7922-4f3b-b4b6-245865e4fae8default.tgz
+DEBUG 2017-08-17 11:08:04,121: 	 Checking directory /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/CMSSW_9_2_6/lib
+DEBUG 2017-08-17 11:08:04,121: 	 Adding directory /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/CMSSW_9_2_6/lib to tarball
+DEBUG 2017-08-17 11:08:04,344: 	 Checking directory /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/CMSSW_9_2_6/biglib
+DEBUG 2017-08-17 11:08:04,344: 	 Adding directory /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/CMSSW_9_2_6/biglib to tarball
+DEBUG 2017-08-17 11:08:04,345: 	 Checking directory /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/CMSSW_9_2_6/module
+DEBUG 2017-08-17 11:08:04,345: 	 Adding data directory /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/CMSSW_9_2_6/src/Calibration/HcalCalibAlgos/data to tarball
+DEBUG 2017-08-17 11:08:05,719: 	 Adding data directory /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/CMSSW_9_2_6/src/Calibration/HcalCalibAlgos/interface to tarball
+DEBUG 2017-08-17 11:08:05,750: 	 Uploading archive /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/crab_prod/crab_prod_HCalMIPCali_test1_17DR_DYToMuMu_M-20_13TeV_v2_17234059ddf016650b1f2d0066d4baab_v1/inputs/5b2974ce-7922-4f3b-b4b6-245865e4fae8default.tgz (1.243164.1 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-08-17 11:08:06,557: 	 Loading required information from the environment
+DEBUG 2017-08-17 11:08:06,557: 	 Found CMSSW_9_2_6 for slc6_amd64_gcc530 with base /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/CMSSW_9_2_6
+DEBUG 2017-08-17 11:08:06,557: 	 Making tarball in /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/crab_prod/crab_prod_HCalMIPCali_test1_17DR_DYToMuMu_M-20_13TeV_v2_17234059ddf016650b1f2d0066d4baab_v1/inputs/debugFiles.tgz
+DEBUG 2017-08-17 11:08:06,561: 	 Uploading archive /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/crab_prod/crab_prod_HCalMIPCali_test1_17DR_DYToMuMu_M-20_13TeV_v2_17234059ddf016650b1f2d0066d4baab_v1/inputs/debugFiles.tgz (1 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2017-08-17 11:08:06,963: 	 Result uploading input files: e49e6dec52e8f43af7066df0d1a434d3db8fc677ef536339960d60e87ad1431b.tar.gz 
+WARNING 2017-08-17 11:08:06,963: 	 Warning: The following output files will not be published, as they are not EDM files: ['Validation_test.root']
+INFO 2017-08-17 11:08:06,963: 	 Sending the request to the server
+DEBUG 2017-08-17 11:08:06,963: 	 Submitting {'maxjobruntime': 1250, 'extrajdl': [], 'ignorelocality': 1, 'savelogsflag': 0, 'useparent': 0, 'asyncdest': 'T2_CH_CERN', 'algoargs': 100, 'cachefilename': 'e49e6dec52e8f43af7066df0d1a434d3db8fc677ef536339960d60e87ad1431b.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_9_2_6', 'edmoutfiles': [], 'userfiles': [], 'primarydataset': '', 'inputdata': '/DYToMuMu_M-20_13TeV_pythia8/PhaseISpring17DR-NoPU_90X_upgrade2017_realistic_v20-v1/GEN-SIM-RECO', 'lfn': '/store/user/nlu/', 'dryrun': 0, 'workflow': 'crab_prod_HCalMIPCali_test1_17DR_DYToMuMu_M-20_13TeV_v2_17234059ddf016650b1f2d0066d4baab_v1', 'cacheurl': u'https://cmsweb.cern.ch/crabcache', 'nonprodsw': 1, 'tfileoutfiles': ['Validation_test.root'], 'oneEventMode': 0, 'debugfilename': 'ad327edef47cea0d55175afb6003e35806749bfcf26810c3f78e53a183d197a3.tar.gz', 'saveoutput': 1, 'publication': 1, 'jobarch': 'slc6_amd64_gcc530', 'totalunits': 0, 'splitalgo': 'LumiBased', 'ignoreglobalblacklist': 0, 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': 'HCalMIPCali_test1_17DR_DYToMuMu_M-20_13TeV_PhaseISpring17DR-NoPU_90X_upgrade2017_realistic_v20-v1_v2_v1'} 
+DEBUG 2017-08-17 11:08:06,963: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=1&savelogsflag=0&useparent=0&asyncdest=T2_CH_CERN&algoargs=100&cachefilename=e49e6dec52e8f43af7066df0d1a434d3db8fc677ef536339960d60e87ad1431b.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_9_2_6&primarydataset=&inputdata=%2FDYToMuMu_M-20_13TeV_pythia8%2FPhaseISpring17DR-NoPU_90X_upgrade2017_realistic_v20-v1%2FGEN-SIM-RECO&lfn=%2Fstore%2Fuser%2Fnlu%2F&dryrun=0&workflow=crab_prod_HCalMIPCali_test1_17DR_DYToMuMu_M-20_13TeV_v2_17234059ddf016650b1f2d0066d4baab_v1&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&nonprodsw=1&oneEventMode=0&debugfilename=ad327edef47cea0d55175afb6003e35806749bfcf26810c3f78e53a183d197a3.tar.gz&saveoutput=1&publication=1&jobarch=slc6_amd64_gcc530&totalunits=0&splitalgo=LumiBased&ignoreglobalblacklist=0&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=HCalMIPCali_test1_17DR_DYToMuMu_M-20_13TeV_PhaseISpring17DR-NoPU_90X_upgrade2017_realistic_v20-v1_v2_v1&tfileoutfiles=Validation_test.root
+DEBUG 2017-08-17 11:08:07,327: 	 Result: {u'result': [{u'RequestName': u'170817_090807:nlu_crab_prod_HCalMIPCali_test1_17DR_DYToMuMu_M-20_13TeV_v2_17234059ddf016650b1f2d0066d4baab_v1'}]}
+INFO 2017-08-17 11:08:07,330: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2017-08-17 11:08:07,330: 	 Task name: 170817_090807:nlu_crab_prod_HCalMIPCali_test1_17DR_DYToMuMu_M-20_13TeV_v2_17234059ddf016650b1f2d0066d4baab_v1
+INFO 2017-08-17 11:08:07,330: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2017-08-17 11:08:07,330: 	 About to return
+INFO 2017-08-17 11:08:07,335: 	 Log file is /afs/cern.ch/work/n/nlu/private/CMS/HCal/MIPCali/MIPCaliJobs/crab_prod/crab_prod_HCalMIPCali_test1_17DR_DYToMuMu_M-20_13TeV_v2_17234059ddf016650b1f2d0066d4baab_v1/crab.log
